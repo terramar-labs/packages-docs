@@ -1,0 +1,4 @@
+- [Introduction](introduction.md)
+- [Installation](introduction.md#installation)
+- [Updating satis.json](introduction.md#updating-satisjson)
+- [Updating packages.json](introduction.md#updating-the-exposed-packagesjson)
