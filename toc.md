@@ -1,4 +1,6 @@
 - [Introduction](introduction.md)
-- [Installation](introduction.md#installation)
-- [Updating satis.json](introduction.md#updating-satisjson)
-- [Updating packages.json](introduction.md#updating-the-exposed-packagesjson)
+- Getting Started
+    - [Installation](getting-started/installation.md)
+- Managing Packages
+    - [Using the Web Interface](managing-packages/web-interface.md)
+    - [Controlling Satis](managing-packages/satis-configuration.md)
