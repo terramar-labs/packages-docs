@@ -42,6 +42,22 @@ bin/console migrations:migrate
 Your installation is complete! Visit the project's web directory from your browser to configure your packages.
 
 
+Usage
+-----
+
+Packages uses Resque as a background job processor. For full automation, at least one Resque worker must be running
+at all times.
+
+
+### Starting a worker
+
+From the command line, run:
+
+```
+bin/console resque:worker:start
+```
+
+
 ### Updating satis.json
 
 ```
