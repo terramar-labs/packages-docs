@@ -17,3 +17,6 @@ Now, Sync your remote to create a package within your Packages installation.
 
 After you have synced your Remote, you can configure each package. Go to Packages and click Edit on one of your
 packages. Check the "Enabled" checkbox to enable and configure further plugins.
+
+> **Note:** You must also ensure a Resque worker is running for automatic webhook updating to work. See the
+  [section on Resque management](resque.md) for more information.

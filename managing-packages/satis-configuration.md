@@ -4,6 +4,9 @@ Satis Configuration
 Enable the Satis plugin on each Package you want to expose via Satis. A webhook will be installed in GitHub or
 GitLab to enable the automatic update of your Satis repository information.
 
+> **Note:** You must also ensure a Resque worker is running for automatic webhook updating to work. See the
+  [section on Resque management](resque.md) for more information.
+
 
 Manually updating Satis
 -----------------------
