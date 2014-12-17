@@ -5,3 +5,4 @@
 - Managing Packages
     - [Using the Web Interface](managing-packages/web-interface.md)
     - [Controlling Satis](managing-packages/satis-configuration.md)
+    - [Managing Resque](managing-packages/resque.md)
