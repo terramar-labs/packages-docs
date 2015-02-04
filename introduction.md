@@ -1,5 +1,6 @@
-packages
-========
+# Packages
+
+> Source code repository management made simple.
 
 Packages extends [Satis](https://github.com/composer/satis), adding useful management functionality.
 

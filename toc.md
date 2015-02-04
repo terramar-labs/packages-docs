@@ -7,3 +7,7 @@
     - [Using the Web Interface](managing-packages/web-interface.md)
     - [Controlling Satis](managing-packages/satis-configuration.md)
     - [Managing Resque](managing-packages/resque.md)
+- Plugins
+    - [Creating a Plugin](plugins/creating-a-plugin.md)
+    - [Event Reference](plugins/event-reference.md)
+    - [Action Reference](plugins/action-reference.md)
