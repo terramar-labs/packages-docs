@@ -20,9 +20,9 @@ Getting started
 
 Create a `Plugin` class that implements `Terramar\Packages\Plugin\PluginInterface`.
 
-  **configure(ContainerBuilder $builder)** is used to configure the given container builder. Register any services your plugin needs here.
-  **getName()** should return a displayable name for the plugin.
-  **getVersion()** should return some version, usually based on the underlying software.
+*  **configure(ContainerBuilder $builder)** is used to configure the given container builder. Register any services your plugin needs here.
+*  **getName()** should return a displayable name for the plugin.
+*  **getVersion()** should return some version, usually based on the underlying software.
 
 
 ### Events

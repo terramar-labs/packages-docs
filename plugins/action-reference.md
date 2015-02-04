@@ -9,8 +9,8 @@ edit page. When you submit that edit form, plugin actions are called to handle t
 
 
 Types:
-  **render** type actions *must* return a Response.
-  **submit** type actions handle form submissions and are paired with **render** actions.
+*  **render** type actions *must* return a Response.
+*  **submit** type actions handle form submissions and are paired with **render** actions.
 
 Action name | Type | Description
 ----------- | ---- | -----------
