@@ -1,6 +1,7 @@
 - [Introduction](introduction.md)
 - Getting Started
     - [Installation](getting-started/installation.md)
+    - [Upgrading](getting-started/upgrade.md)
     - [Customization](getting-started/customizing.md)
 - Managing Packages
     - [Using the Web Interface](managing-packages/web-interface.md)

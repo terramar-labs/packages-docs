@@ -8,24 +8,31 @@ Packages requires:
  * [Composer](https://getcomposer.org)
 
 
-First, clone the project and install dependencies.
+First, clone the project.
 
-```
+```bash
 git clone https://github.com/terramar-labs/packages
 cd packages
-composer install
+```
+
+> **Note:** The `master` branch will always be the latest stable release.
+
+Install dependencies.
+
+```bash
+composer install -o --no-dev
 ```
 
 Next, copy `config.yml.dist` to `config.yml`, editing any values necessary.
 
-```
+```bash
 cp config.yml.dist config.yml
 vi config.yml
 ```
 
 Create your database if necessary, then run the schema tool to update your database schema.
 
-```
+```bash
 bin/console orm:schema-tool:create
 ```
 
