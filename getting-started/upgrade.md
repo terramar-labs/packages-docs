@@ -1,8 +1,7 @@
 Upgrading Packages
 ==================
 
-Since Packages 3.0, backwards compatibility breaks have been carefully avoided. However, upgrading along the 3.x line
-does require some effort.
+Since Packages 3.0, backwards compatibility breaks have been carefully avoided. However, upgrading along the 3.x line does require some effort.
 
 
 ## 3.0.x to 3.1.0

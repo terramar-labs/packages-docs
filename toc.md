@@ -1,10 +1,10 @@
 - [Introduction](introduction.md)
 - Getting Started
     - [Installation](getting-started/installation.md)
+    - [Using Packages](getting-started/usage.md)
     - [Upgrading](getting-started/upgrade.md)
     - [Customization](getting-started/customizing.md)
 - Managing Packages
-    - [Using the Web Interface](managing-packages/web-interface.md)
     - [Controlling Satis](managing-packages/satis-configuration.md)
     - [Managing Resque](managing-packages/resque.md)
 - Plugins
