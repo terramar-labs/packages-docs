@@ -17,7 +17,9 @@ Packages command-line interface.
 
 ### Updating satis.json
 
-`satis.json` is the Satis configuration file. This file tells Satis which repositories to look at.
+> **Notice:** This is no longer necessary and is deprecated. In the future it will be removed.
+
+`satis.json` is the Satis configuration file. This file tells Satis which repositories to look at when generating the package index.
 
 ```
 bin/console satis:update

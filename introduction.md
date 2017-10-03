@@ -4,9 +4,17 @@
 
 Packages extends [Satis](https://github.com/composer/satis), adding useful management functionality.
 
+[Download the latest release](https://github.com/terramar-labs/packages/releases/latest).
+
 Packages automatically registers GitLab and GitHub project web hooks to keep Satis up to date. Packages also
 features a web management interface that allows for easy management of exposed packages and configured source 
 control repositories.
+
+The application is made up of three things: Remotes and Packages and Plugins. A Remote is somewhere that one or more projects, 
+known as Packages, are hosted, for example GitHub or GitLab. Plugins integrate new source code hosts, or generate your Composer repository index, or generate documentation, or run unit tests, etc, when you push code to your repositories.
+
+Packages exposes a landing page and the necessary JSON files to allow `composer` to use your Packages installation 
+as a private repository for your Composer packages. 
 
 Packages version 3 works on a plugin based system based around source code repositories. Packages
 can trigger, with each code push, many automated tasks like documentation generation or code 
