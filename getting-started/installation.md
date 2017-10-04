@@ -39,7 +39,7 @@ Next, you can use the built-in PHP webserver to test your setup.
 php -S localhost:8081 -t /path/to/packages/web
 ```
 
-Visit `localhost:8081` in your browser and you should see your Packages application. 
+Visit `localhost:8081` in your browser and you should see your Packages application. Login with the username and password you entered in `config.yml`.
 
 The final step is starting a background worker. Packages relies on these to perform the heavy lifting behind-the-scenes.
 
@@ -49,7 +49,7 @@ bin/console resque:worker:start &
 
 > **Note:** For more information on the Resque workers, check [the dedication section](../managing-packages/resque.md).
 
-Your installation is complete! Login with the username and password you entered in `config.yml`.
+Your installation is complete!
 
 
 ### Next up
