@@ -7,31 +7,16 @@ GitLab to enable the automatic update of your Satis repository information.
 > **Note:** You must also ensure a Resque worker is running for automatic webhook updating to work. See the
   [section on Resque management](resque.md) for more information.
 
+Packages uses the information retrieved from GitHub and GitLab to generate a `satis.json` configuration. Satis consumes this file, and generates a `packages.json` file that Composer can use to resolve private dependencies.
+
+> **Notice:** `packages.json` is publicly accessible, exposing information about the available repositories
+and their branches, tags, etc.
 
 Manually updating Satis
 -----------------------
 
-Sometimes you need to manually build or generate the exposed Satis information. You can do this by using the
-Packages command-line interface.
+Sometimes you need to manually build or generate the exposed Satis information. You can do this by using the Packages command-line interface.
 
-
-### Updating satis.json
-
-> **Notice:** This is no longer necessary and is deprecated. In the future it will be removed.
-
-`satis.json` is the Satis configuration file. This file tells Satis which repositories to look at when generating the package index.
-
-```
-bin/console satis:update
-```
-
-This command generates an updated satis.json with all enabled packages.
-
-
-### Updating the exposed packages.json
-
-`packages.json` is publicly accessible, exposing information about the available repositories
-and their branches, tags, etc. Once `satis.json` is updated, run the build command to update `packages.json`.
 
 ```
 bin/console satis:build
@@ -44,3 +29,21 @@ update `satis.json` and build `packages.json`.
 bin/console satis:update --build
 ```
 
+Using your Satis repository
+---------------------------
+
+In your project's `composer.json`, add the section `repositories` if it doesn't already exist. Then add a new `composer` repository with your Packages URL as the `url`.
+
+```json
+{
+  /* ... */
+  "require": { /* ... */ },
+  "repositories": [
+    {
+      "type": "composer",
+      "url":  "https://packages.example.com/"
+    }
+  ],
+  /* ... */
+}
+```

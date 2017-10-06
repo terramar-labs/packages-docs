@@ -13,12 +13,9 @@ control repositories.
 The application is made up of three things: Remotes and Packages and Plugins. A Remote is somewhere that one or more projects, 
 known as Packages, are hosted, for example GitHub or GitLab. Plugins integrate new source code hosts, or generate your Composer repository index, or generate documentation, or run unit tests, etc, when you push code to your repositories.
 
-Packages exposes a landing page and the necessary JSON files to allow `composer` to use your Packages installation 
-as a private repository for your Composer packages. 
+Packages automatically registers GitLab and GitHub project webhooks to keep Satis up to date every time you push code. Packages also features a web management interface that allows for easy management of exposed packages and configured source control repositories.
 
-Packages version 3 works on a plugin based system based around source code repositories. Packages
-can trigger, with each code push, many automated tasks like documentation generation or code 
-analysis. The simple event-based architecture allows easy creation of new automation tasks.
+Packages version 3 works on a plugin based system based around source code repositories. Packages can trigger, with each code push, many automated tasks like documentation generation or code  analysis. The simple event-based architecture allows easy creation of new automation tasks.
 
 Currently implemented plugins:
 
@@ -29,7 +26,7 @@ Currently implemented plugins:
   Provides project sync support and automatic webhook registration within GitHub.
 
 * **Satis plugin**
-  Updates Satis when source code is updated.
+  Updates Satis when source code is updated. [View documentation](managing-packages/satis-configuration.md).
 
 * **Clone Project plugin**
   Clones the source code repository to allow for further analysis locally.

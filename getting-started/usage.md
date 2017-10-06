@@ -37,4 +37,16 @@ To enable and configure a specific plugin (such as the Satis plugin), click Edit
 
 The Edit Package screen shows which plugins are available for the package and whatever configuration options they have.
 
-> To add a Package to your Composer repository index, enable the Composer Satis plugin. To generate API documentation using Sami, enable the Clone Project and Sami plugins.
+To add a Package to your Composer repository index, enable the Composer Satis plugin. 
+
+To generate API documentation using Sami, enable the Clone Project and Sami plugins.
+
+> **Note**: Check the [Satis Configuration section](../managing-packages/satis-configuration.md) for more information on Satis.
+
+# Next up
+
+Read about [customizing Packages](../managing-packages/customizing.md) or [running Packages with Docker](docker.md).
+
+### Having trouble?
+
+View [troubleshooting resources](../managing-packages/troubleshooting.md).

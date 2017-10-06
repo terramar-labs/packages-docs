@@ -2,11 +2,13 @@
 - Getting Started
     - [Installation](getting-started/installation.md)
     - [Using Packages](getting-started/usage.md)
+    - [Using Docker](getting-started/docker.md)
     - [Upgrading](getting-started/upgrade.md)
-    - [Customization](getting-started/customizing.md)
 - Managing Packages
-    - [Controlling Satis](managing-packages/satis-configuration.md)
-    - [Managing Resque](managing-packages/resque.md)
+    - [Resque and Redis](managing-packages/resque.md)
+    - [Satis Configuration](managing-packages/satis-configuration.md)
+    - [Customization](managing-packages/customizing.md)
+    - [Troubleshooting](managing-packages/troubleshooting.md)
 - Plugins
     - [Creating a Plugin](plugins/creating-a-plugin.md)
     - [Event Reference](plugins/event-reference.md)

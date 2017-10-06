@@ -1,53 +1,70 @@
 Installation
 ============
 
-Packages requires:
+Pre-requisites:
  * PHP 5.6 or later
- * Some database platform supported by [Doctrine 2](http://doctrine-project.org) (sqlite works great!)
- * [Redis](https://redis.io/)
  * [Composer](https://getcomposer.org)
+ * Some database platform supported by [Doctrine 2](http://doctrine-project.org) (sqlite works great!)
+ * [Redis](https://redis.io/) 
 
-Download the [latest release on GitHub](https://github.com/terramar-labs/packages/releases/latest) or clone the project.
+Download the [latest release](https://github.com/terramar-labs/packages/releases/latest), or clone the repository.
 
 ```bash
-git clone https://github.com/terramar-labs/packages
+git clone git@github.com:terramar-labs/packages.git
+```
+
+### Install dependencies
+
+Switch to the project root directory and run `composer install`.
+
+```bash
 cd packages
+composer install
 ```
 
-Install dependencies.
+### Edit configuration
 
-```bash
-composer install -o --no-dev
-```
-
-Copy `config.yml.dist` to `config.yml`, editing the values appropriately.
+Copy `config.yml.dist` to `config.yml` and edit as appropriate.
 
 ```bash
 cp config.yml.dist config.yml
 vi config.yml
 ```
 
-Create your database if necessary, then run the schema tool to create your database schema.
+### Generate the database schema
+
+Packages uses Doctrine ORM to auto-generate the database schema for your configured platform.
 
 ```bash
 bin/console orm:schema-tool:create
 ```
 
-Next, you can use the built-in PHP webserver to test your setup.
+> Check the [Docker page](../getting-started/docker.md) for details on running Packages with Docker.
+
+Running the application
+-----------------------
+
+Start PHP's built-in webserver to run the Packages web application with minimal effort.
 
 ```bash
-php -S localhost:8081 -t /path/to/packages/web
+# Visit http://localhost:8080 to see the landing page.
+php -S localhost:8080 -t web
 ```
 
-Visit `localhost:8081` in your browser and you should see your Packages application. Login with the username and password you entered in `config.yml`.
+### Start a Resque worker
 
-The final step is starting a background worker. Packages relies on these to perform the heavy lifting behind-the-scenes.
+For fully-automatic integration with GitHub, GitLab, and your Satis repository, you must always have at least one Resque worker running. 
 
 ```bash
-bin/console resque:worker:start &
+bin/console resque:worker:start
 ```
 
-> **Note:** For more information on the Resque workers, check [the dedication section](../managing-packages/resque.md).
+> For more information on Resque workers, check [the dedicated section](../managing-packages/resque.md).
+
+
+### Development/debug mode
+
+Visit `index_dev.php` in your browser to view the site with the `dev` environment configuration. In this env, views and the service container are not cached, so changes made are immediately visible.
 
 Your installation is complete!
 
