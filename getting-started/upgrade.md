@@ -13,6 +13,14 @@ Since Packages 3.0, backwards compatibility breaks have been carefully avoided. 
   * Specifying `name`, `homepage`, and `contact_email` now reflect on the public landing page.
   * Specifying `archive: true` and `base_path` will generate links to dist copies of the dependencies.
   * Check `config.yml.dist` for a full example.
+* Packages 3.2 code-style has been updated to adhere more closely to PSR-2. Converted all `array()` initializations to `[]`.
+* Added a package listing page with details on using the repository and packages available.
+* Moved Satis-generated files outside of the web root into `satis/` to allow for securing access.
+* Packages now optionally secures the Satis-generated files by specifying `secure_satis: true` in config.yml
+  * If enabled, the application requires the user to login before they can view the available packages.
+  * If enabled, the application requires HTTP Basic auth using the configured username and password when accessing Satis-generated packages.json, includes, and dist files. 
+* Extended Plugins with the ability to specify HTTP routes and service container compiler passes.
+* Fixed many bugs and usability issues. Better error handling, help hints, rephrasing, etc.
 
 ## 3.0.x to 3.1.0
 
