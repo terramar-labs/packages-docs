@@ -29,12 +29,6 @@ Sometimes you need to manually build or generate the exposed Satis information. 
 bin/console satis:build
 ```
 
-Alternatively, running the `satis:update` command while passing `--build` will both
-update `satis.json` and build `packages.json`.
-
-```
-bin/console satis:update --build
-```
 
 Using your Satis repository
 ---------------------------
