@@ -6,8 +6,6 @@ Since Packages 3.0, backwards compatibility breaks have been carefully avoided. 
 
 ## 3.1.x to 3.2.0
 
-> **Note**: Packages 3.2 is still in development.
-
 * Packages 3.2 no longer relies on the `git` binary to connect to GitHub and GitLab remotes, instead using the respective HTTP API.
 * Packages 3.2 supports new configuration options in the `packages:` section in `config.yml`.
   * Specifying `name`, `homepage`, and `contact_email` now reflect on the public landing page.
