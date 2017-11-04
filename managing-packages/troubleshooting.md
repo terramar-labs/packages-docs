@@ -23,4 +23,10 @@ Troubleshooting
    ```bash
    tail -f logs/resque.log
    ```
-  
+4. Open an [Issue](https://github.com/terramar-labs/packages/issues/new) if you get stuck or find a bug.
+   Include as much detail as reasonable, but don't worry too much about protocol. We're happy 
+   to work with you to get it figured out.
+   
+> The project maintainers welcome any and all questions and feedback. 
+>
+> Open an [Issue](https://github.com/terramar-labs/packages/issues/new) or email contact@terramarlabs.com to get in touch.
