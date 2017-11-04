@@ -4,7 +4,7 @@ Using the application
 Packages is made up of two things:
 
 * A **Remote** is a source code host: GitHub or GitLab. Packages can be used for self-hosted GitLab instances.
-* Each Remote may have one or more **Package**s. A Package represents a source code repository.
+* Each Remote may have one or more Packages. A **Package** represents an individual source code repository.
 
 When code is pushed to the source code repository, Packages will be notified via automatically installed webhooks and whatever configured tasks will run.
 
