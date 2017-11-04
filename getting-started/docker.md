@@ -2,7 +2,7 @@
 
 Get started instantly with the example `docker-compose.yml` that sets up nginx and Redis containers with Packages installed and configured, ready to try out.
 
-> **Tip**:
+> **Tip**: Check out [special-happiness](https://github.com/veonik/special-happiness) for an example of highly-available GitLab and Redis configurations.
 
 ## Getting started
 
